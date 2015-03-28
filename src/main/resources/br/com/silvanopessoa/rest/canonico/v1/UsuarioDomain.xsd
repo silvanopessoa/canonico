@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema 
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://silvanopessoa.com.br/model/Usuario/v1"
+	xmlns:tns="http://silvanopessoa.com.br/model/Usuario/v1"
+	elementFormDefault="qualified">
+
+	<complexType name="UsuarioType">
+		<sequence>
+			<element name="login" type="string" minOccurs="0">
+				<annotation>
+					<documentation>
+						<![CDATA[login do usuario.]]>
+					</documentation>
+				</annotation>
+			</element>
+			<element name="situacao" type="string" minOccurs="0">
+				<annotation>
+					<documentation>
+						ATIVO, INATIVO
+					</documentation>
+				</annotation>
+			</element>
+			<element name="dataAlteracao" type="dateTime" minOccurs="0">
+				<annotation>
+					<documentation>
+						data de alteração do usuário.
+					</documentation>
+				</annotation>
+			</element>
+			<element name="senha" type="string" minOccurs="0">
+				<annotation>
+					<documentation>
+						senha do usuário.
+					</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+
+</schema>
